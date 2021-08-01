@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "my-firebase-project22": {
+      "hosting": {
+        "firebasecrud": [
+          "my-firebase-project22"
+        ]
+      }
+    }
+  }
+}

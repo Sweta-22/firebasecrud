@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // host:'http://localhost:5000/my-firebase-project22/us-central1/app/api'
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ firebase: {
+  apiKey: "AIzaSyAD_acjAnMTk3S3SdNYRpfDGnHozpaQP6E",
+  authDomain: "my-firebase-project22.firebaseapp.com",
+  databaseURL: "https://my-firebase-project22-default-rtdb.firebaseio.com",
+  projectId: "my-firebase-project22",
+  storageBucket: "my-firebase-project22.appspot.com",
+  messagingSenderId: "1037839289845",
+  appId: "1:1037839289845:web:2f0386ff1538a0fc2de4bc",
+  measurementId: "G-NDPF64GGH8"
+}
 };
 
 /*

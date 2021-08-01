@@ -1,0 +1,25 @@
+<p>signup works!</p>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <div class="card">
+        <div class="card-body">
+            <form (ngSubmit)="register()">
+<div class="formGroup">
+    <input type ="email" class="formControl" placeholder="enter email" #email required>
+</div>
+<div class="formGroup">
+    <input type ="password" class="formControl" placeholder="password" #password required>
+</div>
+
+<div class="formGroup">
+    <input type ="button" class="btn btn-primary" value="signup"  (click)="service.SignUp(email.value,password.value)"><br>
+    
+</div>
+</form>
+<div class="formGroup">
+    <p *ngIf="message.length > 0" class="text-info">
+        {{message}}
+    </p>
+</div>
+    </div>

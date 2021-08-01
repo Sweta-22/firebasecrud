@@ -1,0 +1,17 @@
+<p>signin works!</p>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+<div class="formGroup">
+    <input type ="email" class="formControl" placeholder="Username" #email required>
+</div>
+<div class="formGroup">
+    <input type ="password" class="formControl" placeholder="password" #password required>
+</div>
+<div class="formGroup">
+    <input type ="button" class="btn btn-primary" value="login"  (click)="service.SignIn(email.value,password.value)"><br>
+      
+    <button [routerLink]="['/forgot']">forgot password</button><br>
+    <button (click) = "service.googleLogin()" class="google">login or signup with google</button>
+    
+    </div>

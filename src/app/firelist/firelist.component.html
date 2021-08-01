@@ -1,0 +1,39 @@
+<p>firelist works!</p>
+<p>list works!</p>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+<h2>Add form</h2>
+<!-- <button (click)="addUser()" class="btn btn-primary">ADD</button> -->
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Address</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>PIN</th>
+        <th>id</th>
+        
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let val of emplist">
+        <td><span>{{val.address}}</span></td>
+        <td><span>{{val.name}}</span></td> 
+        <td><span>{{val.phone}}</span></td>
+        <td><span>{{val.pin}}</span></td>
+        <td><span>{{val.key}}</span></td>
+
+        <td>
+          
+          <!-- <button (click)="editUser(val)" class="btn btn-primary">EDIT</button> -->
+          <!-- <button (click)="deleteUser(val.key)" class="btn btn-danger">DELETE</button> -->
+          
+        </td> 
+        
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
