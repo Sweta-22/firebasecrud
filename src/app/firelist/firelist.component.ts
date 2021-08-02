@@ -23,5 +23,7 @@ export class FirelistComponent implements OnInit {
 //     this.ngOnInit();
 //   })
 
-//}
+
+
+
 }
